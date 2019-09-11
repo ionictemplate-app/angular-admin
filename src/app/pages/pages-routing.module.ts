@@ -12,7 +12,7 @@ import {UsersComponent} from './users/users.component';
 const routes: Routes = [
   {
     path: '', component: LayoutsComponent, children: [
-      {path: '', redirectTo: 'address', pathMatch: 'full'},
+      {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       {path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
       {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)},
       {path: 'address', loadChildren: () => import('./address/address.module').then(m => m.AddressModule)},
