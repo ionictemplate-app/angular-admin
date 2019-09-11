@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>{{data.isEdit ? 'Edit' : 'Add'}}</h2>
+<mat-dialog-content>
+  <form [formGroup]="bForm">
+    <mat-form-field class="display-block">
+      <mat-label>id</mat-label>
+      <input matInput formControlName="id" required>
+      <mat-error *ngIf="!bForm.controls.id.valid  && bForm.controls.id.dirty">
+        id required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="display-block">
+      <mat-label>name</mat-label>
+      <input matInput formControlName="name" required>
+      <mat-error *ngIf="!bForm.controls.name.valid  && bForm.controls.name.dirty">
+        Length at least 3
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!bForm.valid" (click)="onSave()">ok</button>
+</mat-dialog-actions>

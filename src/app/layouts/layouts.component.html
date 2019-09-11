@@ -1,0 +1,13 @@
+<mat-sidenav-container class="box" [class.default-theme]="'true'">
+  <mat-sidenav class="sidenav" [position]="sidenavAlign" [mode]="sidenavMode" [opened]="sidenavOpen" #sidenav>
+    <app-brand></app-brand>
+    <app-navigation [navList]="navList"></app-navigation>
+  </mat-sidenav>
+  <div class="main">
+    <app-header [sidenav]="sidenav"></app-header>
+    <div class="main-container">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</mat-sidenav-container>

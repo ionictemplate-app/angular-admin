@@ -1,0 +1,60 @@
+<h2 mat-dialog-title>{{data.isEdit ? 'Edit' : 'Add'}}</h2>
+<mat-dialog-content>
+  <form [formGroup]="goodForm">
+    <mat-form-field class="display-block">
+      <mat-label>subCate</mat-label>
+      <mat-select required [(value)]="selectCate">
+        <mat-option *ngFor="let c of cateList" [value]="c.id">
+          {{c.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="display-block">
+      <mat-label>id</mat-label>
+      <input matInput formControlName="id" required>
+      <mat-error *ngIf="!goodForm.controls.name.valid  && goodForm.controls.name.dirty">
+        id required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="display-block">
+      <mat-label>name</mat-label>
+      <input matInput formControlName="name" required>
+      <mat-error *ngIf="!goodForm.controls.name.valid  && goodForm.controls.name.dirty">
+        Length at least 3
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="display-block">
+      <mat-label>price</mat-label>
+      <input matInput formControlName="price" required type="number">
+      <mat-error *ngIf="!goodForm.controls.price.valid  && goodForm.controls.price.dirty">
+        price required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="display-block">
+      <mat-label>saleNum</mat-label>
+      <input matInput formControlName="saleNum" required type="number">
+      <mat-error *ngIf="!goodForm.controls.saleNum.valid  && goodForm.controls.saleNum.dirty">
+        saleNum required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="display-block">
+      <mat-label>inventory</mat-label>
+      <input matInput formControlName="inventory" required type="number">
+      <mat-error *ngIf="!goodForm.controls.inventory.valid  && goodForm.controls.inventory.dirty">
+        saleNum required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="display-block">
+      <mat-label>img</mat-label>
+      <input matInput formControlName="img">
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!goodForm.valid" (click)="onSave()">ok</button>
+</mat-dialog-actions>

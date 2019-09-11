@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+
+@include mat-core();
+
+@import "./themes/variables";
+@import './themes/black-theme';
+@import "./themes/default-theme";
+@import "./themes/light-theme";
+@import "./themes/nature-theme";
+
+
+/**components styles**/
+@import "./app/components/loading/loading.component.theme";
+@import "./app/components/navigation/nav-item/nav-item.component.theme";
+@import "./app/components/brand/brand.component.theme";
+
+@mixin custom-components-theme($theme) {
+  @include app-loading-theme($theme);
+  @include app-nav-theme($theme);
+  @include app-brand-theme($theme);
+
+}
+
+
+//@include angular-material-theme($my-theme);
+//@include custom-components-theme($my-theme);
+
+
+.default-theme {
+  @include angular-material-theme($my-theme);
+  @include custom-components-theme($my-theme);
+}
+
+.light-theme {
+  @include angular-material-theme($my-light-theme);
+  @include custom-components-theme($my-light-theme);
+}
+
+.black-theme {
+  @include angular-material-theme($my-black-theme);
+  @include custom-components-theme($my-black-theme);
+}
+
+.nature-theme {
+  @include angular-material-theme($my-nature-theme);
+  @include custom-components-theme($my-nature-theme);
+}
+
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  line-height: normal;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.mat-drawer-side {
+  border-right: none !important;
+}
+
+
+.mat-sidenav-content::-webkit-scrollbar,
+body::-webkit-scrollbar,
+mat-sidenav.sidenav::-webkit-scrollbar,
+.main-container::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.mat-sidenav-content::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+mat-sidenav.sidenav::-webkit-scrollbar-thumb,
+.main-container::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  outline: 1px solid #333;
+}
+

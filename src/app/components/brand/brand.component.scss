@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.brand {
+  position: relative;
+  width: 250px;
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-logo {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 24px;
+    color: #fff;
+  }
+}

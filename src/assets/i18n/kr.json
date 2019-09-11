@@ -1,0 +1,12 @@
+{
+  "nav.dashboard": "대시 보드",
+  "nav.address": "주소",
+  "nav.banner": "배너",
+  "nav.goods": "상품",
+  "nav.cate": "카테고리",
+  "nav.subCate": "하위 범주",
+  "nav.category": "카테고리",
+  "nav.pay": "결제 방법",
+  "nav.order": "주문",
+  "nav.users": "사용자"
+}

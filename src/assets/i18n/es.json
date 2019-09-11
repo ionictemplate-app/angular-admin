@@ -1,0 +1,12 @@
+{
+  "nav.dashboard": "Tablero",
+  "nav.address": "Dirección",
+  "nav.banner": "Estandarte",
+  "nav.goods": "Bienes",
+  "nav.cate": "Categoría",
+  "nav.subCate": "Subcategoría",
+  "nav.category": "Categoría",
+  "nav.pay": "Pagar",
+  "nav.order": "Orden",
+  "nav.users": "Usuario"
+}

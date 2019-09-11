@@ -1,0 +1,17 @@
+<div fxLayout.xs="column" fxLayoutAlign="center center">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <img class="img" [src]="'assets/images/lang/'+selectedLanguage.id+'.png'">
+      <span>{{selectedLanguage.id}}</span>
+    </div>
+  </button>
+
+  <mat-menu #menu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item *ngFor="let lang of languages" (click)="setLanguage(lang)">
+      <span fxLayout="row" fxLayoutAlign="start center">
+        <img class="img" [src]="'assets/images/lang/'+lang.id+'.png'">
+        <span>{{lang.title}}</span>
+      </span>
+    </button>
+  </mat-menu>
+</div>

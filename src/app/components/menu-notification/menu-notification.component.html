@@ -1,0 +1,45 @@
+<div class="notice-container">
+  <button mat-icon-button (click)="toggleNotice()">
+    <mat-icon *ngIf="!noticeList.length">notifications_none</mat-icon>
+    <mat-icon [matBadge]="noticeList?.length" matBadgeColor="primay" *ngIf="noticeList.length">notifications_none
+    </mat-icon>
+  </button>
+
+  <div class="dropdown mat-elevation-z2" [class.open]="isOpen">
+    <div class="card">
+      <div class="card-header">
+        <div class="title">
+          <div>notifications</div>
+          <div class="card-extra">you have {{ noticeList?.length }} new notifications</div>
+        </div>
+        <button mat-icon-button>
+          <mat-icon>settings</mat-icon>
+        </button>
+      </div>
+      <div *ngIf="noticeList.length !== 0;else noNotice">
+        <perfect-scrollbar class="card-content">
+          <mat-nav-list>
+            <ng-container *ngFor="let n of noticeList; last as isLast">
+              <mat-list-item>
+                <mat-icon class="notice-icon-notifications" matListIcon>notifications</mat-icon>
+                <h3 matLine> {{ n.title }}</h3>
+                <p matLine> {{ n.date }} </p>
+                <button mat-icon-button (click)="onDelete($event, n)">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-list-item>
+              <mat-divider *ngIf="!isLast"></mat-divider>
+            </ng-container>
+          </mat-nav-list>
+        </perfect-scrollbar>
+      </div>
+      <div class="card-footer">
+        <div class="card-action">View all notifications</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #noNotice>
+  <div class="no">no notice</div>
+</ng-template>

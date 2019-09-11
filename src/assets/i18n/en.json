@@ -1,0 +1,12 @@
+{
+  "nav.dashboard": "Dashboard",
+  "nav.address": "Address",
+  "nav.banner": "Banner",
+  "nav.goods": "Goods",
+  "nav.cate": "Cate",
+  "nav.subCate": "Sub-Cate",
+  "nav.category": "category",
+  "nav.pay": "pay",
+  "nav.order": "order",
+  "nav.users": "users"
+}

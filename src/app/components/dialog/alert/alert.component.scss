@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  .dialog-actions {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    ::ng-deep button {
+      text-transform: uppercase;
+      margin-left: 8px;
+      [dir='rtl'] & {
+        margin-right: 8px;
+        margin-left: inherit;
+      }
+      padding-left: 8px;
+      padding-right: 8px;
+      min-width: 64px;
+    }
+  }
+}

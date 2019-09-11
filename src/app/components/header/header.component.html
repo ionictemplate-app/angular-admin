@@ -1,0 +1,18 @@
+<div class="header mat-elevation-z2" fxLayout="row" fxLayoutAlign="start center">
+  <button mat-icon-button (click)="sidenav.opened = !sidenav.opened">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span fxFlex></span>
+  <app-language></app-language>
+  <button mat-icon-button [fxHide]="true" [fxHide.gt-sm]="false" (click)="toggleFullscreen()">
+    <mat-icon *ngIf="!isFullscreen;else noFull">fullscreen</mat-icon>
+    <ng-template #noFull>
+      <mat-icon *ngIf="isFullscreen">fullscreen_exit</mat-icon>
+    </ng-template>
+  </button>
+  <app-menu-notification [noticeList]="list" (delete)="onDelete($event)"></app-menu-notification>
+  <app-menu-users></app-menu-users>
+</div>
+
+<app-loading *ngIf="isLoading"></app-loading>

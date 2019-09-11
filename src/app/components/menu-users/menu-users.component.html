@@ -1,0 +1,27 @@
+<button mat-icon-button  *ngIf="!(isAuthenticated | async)" (click)="onLogin()">
+  <mat-icon color="accent">person</mat-icon>
+</button>
+
+<button mat-button [matMenuTriggerFor]="menu" *ngIf="(isAuthenticated | async)">
+  <mat-icon>person</mat-icon>
+  Menu
+</button>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>account_circle</mat-icon>
+    <span>my</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>settings</mat-icon>
+    <span>settings</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>help</mat-icon>
+    <span>help</span>
+  </button>
+  <button mat-menu-item (click)="onExit()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span>exit</span>
+  </button>
+</mat-menu>
