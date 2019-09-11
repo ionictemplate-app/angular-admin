@@ -5,7 +5,7 @@
 </p>
 
 <h3 align="center">Ionic5 Fruit App</h3>
- <a href="https://fruit-b930e.firebaseapp.com" target="_blank"><h3 align="center">[online demo]</h3></a>
+ <a href="https://fruit-b930e.firebaseapp.com"><h3 align="center">online demo</h3></a>
  <a href="https://codecanyon.net/item/ionic5-fruit-app-with-firebase/24448819" target="_blank"><h3 align="center">Ionic5 Fruit App with Firebase </h3></a>
  
 
