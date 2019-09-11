@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  npm install
  ng serve`
  
- ##live demo
+## Live demo
  <a target="_blank" rel="noopener noreferrer" href="https://fruit-web-admin.firebaseapp.com/">
  https://fruit-web-admin.firebaseapp.com</a>
 ## Development server
