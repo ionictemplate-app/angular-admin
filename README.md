@@ -5,8 +5,8 @@
 </p>
 
 <h3 align="center">Ionic5 Fruit App</h3>
- <a href="https://fruit-b930e.firebaseapp.com"> <h3 align="center">online demo </h3> </a>
- <a href="https://codecanyon.net/item/ionic5-fruit-app-with-firebase/24448819"> <h3 align="center">Ionic5 Fruit App with Firebase </h3> </a>
+ <a href="https://fruit-b930e.firebaseapp.com" target="_blank"><h3 align="center">[online demo]</h3></a>
+ <a href="https://codecanyon.net/item/ionic5-fruit-app-with-firebase/24448819" target="_blank"><h3 align="center">Ionic5 Fruit App with Firebase </h3></a>
  
 
 # angular-admin
@@ -28,7 +28,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  
 ## Video Installation Guide 
   Ionic Restaurant app  
- [![Ionic5 Fruit App with Firebase APP INSTALLATION GUIDE]](https://youtu.be/dwYycFHXE4s) 
+ [Ionic5 Fruit App with Firebase APP INSTALLATION GUIDE](https://youtu.be/dwYycFHXE4s) 
 
 
  
