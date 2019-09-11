@@ -5,13 +5,11 @@
 </p>
 
 <h3 align="center">Ionic5 Fruit App</h3>
- <a  href="https://fruit-b930e.firebaseapp.com/"><h3 align="center">online demo</h3></a>
- <a  href="https://codecanyon.net/item/ionic5-fruit-app-with-firebase/24448819/">
- <h3 align="center">Ionic5 Fruit App with Firebase</h3>
- </a>
- 
+<h3 align="center">[online demo](https://fruit-b930e.firebaseapp.com)</h3>
+<h3 align="center">[Ionic5 Fruit App with Firebase](https://codecanyon.net/item/ionic5-fruit-app-with-firebase/24448819)</h3>
 
-# angular-admin
+
+## angular-admin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
 <a target="_blank" rel="noopener noreferrer">
